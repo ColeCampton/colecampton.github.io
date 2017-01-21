@@ -84,7 +84,7 @@ src:local('Material Icons'),local(MaterialIcons-Regular),url(fonts/icons.woff2) 
   font-family: 'Vast Shadow';
   font-style: normal;
   font-weight: 400;
-  src: local('Vast Shadow Regular'), local('VastShadow-Regular'), url(fonts/vsl.ttf) format('truetype');
+  src: local('Vast Shadow Regular'), local('VastShadow-Regular'), url(fonts/GOTHAM-LIGHT.TTF) format('truetype');
 }
 /* latin-ext */
 @font-face {
@@ -263,7 +263,7 @@ a{
     font-size: 14.5px;
     color: #4db6ac;
 }
-#projects, #posts{
+#projects, #posts, #about{
     display: none;
 }
 img{
