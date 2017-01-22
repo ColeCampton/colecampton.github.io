@@ -1,8 +1,10 @@
 ---
 layout: default
 ---
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <article class="center-align">
   <h2 class="my-mini-heading">{{ page.title }}</h2>
+  
 
   <div class="my-text-body">
     {{ content }}
@@ -11,3 +13,18 @@ layout: default
     <a class="waves-effect waves-teal btn-flat btn-large" href="{{ site.baseurl }}/">{{ site.home_btn }}</a>
   </div>
 </article>
+$("script[type='math/tex']").replaceWith(
+  function(){
+    var tex = $(this).text();
+    return "<span class=\"inline-equation\">" + 
+           katex.renderToString(tex) +
+           "</span>";
+});
+
+$("script[type='math/tex; mode=display']").replaceWith(
+  function(){
+    var tex = $(this).text();
+    return "<div class=\"equation\">" + 
+           katex.renderToString("\\displaystyle "+tex) +
+           "</div>";
+});

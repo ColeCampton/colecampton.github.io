@@ -1,16 +1,16 @@
 ---
-layout: post
-title:  "Use my jekyll theme"
+layout: page
+title:  "The Probabilistic Method"
 date:   2016-09-19 22:10:00 +0200
-tags: ['english', 'jekyll', 'theme']
-author: "Lukas Himsel"
+tags: ['erdos', 'probabilistic method', 'math']
+author: "Cole Campton"
 ---
 
 ## Hints
-
+$$ E = mc^2 $$
 If you want to use my jekyll theme, follow the instructions and host it yourself. Easily setup as a Github page.  
 
-To add pages (for example a portfolio, an extra about page, and so on), you need to link them to the `index.html` manually. Required to configure in this dimensions is a bit of html and jekyll know-how. Reading the [Jekyll docs](http://jekyllrb.com/docs/pages/) could help. All other things are easy to edit and configure, even without much jekyll experience.  
+To add pages (for example a portfolio, an extra about page, and so on), you need to link them to the `index.html` manually. Required to configure in this dimensions is a bit of html and jekyll know-how. Reading the [Jekyll docs](http://jekyllrb.com/docs/pages/) could help. All other things are easy to edit and configure, even without much jekyll experience. 
 
 #### Theme features  
 - Projects showcase  
