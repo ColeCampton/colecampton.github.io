@@ -5,55 +5,119 @@ date:   2016-09-19 22:10:00 +0200
 tags: ['erdos', 'probabilistic method', 'math']
 author: "Cole Campton"
 ---
+The Probabilistic Method is a method of proof first used by Paul Erdős. Erdős himself said during his 80th birthday conference, that he believes ths method will live long after him. The method has the striking ability to build proofs of existance without actual construction. 
 
-## Hints
-$$ E = mc^2 $$
-If you want to use my jekyll theme, follow the instructions and host it yourself. Easily setup as a Github page.  
+Each application of the methods follows the same general workflow
 
-To add pages (for example a portfolio, an extra about page, and so on), you need to link them to the `index.html` manually. Required to configure in this dimensions is a bit of html and jekyll know-how. Reading the [Jekyll docs](http://jekyllrb.com/docs/pages/) could help. All other things are easy to edit and configure, even without much jekyll experience. 
+1. Describe the probability that an element of a set has a certain property.
+1. Use the property to show that this probabilty occurs with a non-zero probabilty.
+1. Then observe that an element with the chosen property must exist.
 
-#### Theme features  
-- Projects showcase  
-- RSS and ATOM feed  
-- Blogpost pagination  
-- SEO meta tags, *schema.org* structured data  
-- [twitter](https://dev.twitter.com/cards/getting-started) cards  
-- made with MaterializeCSS
-- Disqus comments  
+In the abstract this seems to be an obvious technique. The following provides an example to allow the reader to appreciate the magic-like power of Erdős' Probabilistic Method.
 
-## Setup
+## The Chip-Liar Game
+### Example: The Liar Game
 
-### 1. Get the sources
+1. Paul asks $$ q $$ questions in the form "Is $$ x\in S $$?" for any subset $$S$$
+1. Determining x $$\in\left\{1,...,n\right\}$$
+1. Carole doesn't necessarily need to select an $$x$$ beforehand, but at least one $$x$$ must be consistent with her answers.
 
-#### 1.1 Clone
+For which $$n$$ numbers, $$q$$ questions, and $$k$$ lies are known by both Carole and Paul. Can Paul determine the number?
+Use Probabilistic method to prove the existence of a winning strategy for one player.
 
-Clone the repository from github:  
-[https://github.com/lukas-h/material-theme.git](https://github.com/lukas-h/material-theme.git)   
 
-#### 1.2 or download  
-[https://github.com/lukas-h/material-theme/archive/gh-pages.zip](https://github.com/lukas-h/material-theme/archive/gh-pages.zip)  
 
-### 2. Configure  
-- Replace all the configuration in `_config.yml` and `_data/projects.yml` by your own data. Change the name, email address, configure your your language settings.  
-And most important: change the site's URL! Optionally add your google analytics ID.
+### An Equivalent Game: Chip-Liar
 
-- Put your address and legal info into `imprint.html`.  
+1. Chip for each $$x$$. 
+1. Board is a method for keeping track of lies each $$x$$ has remaining. 
+1. Used to keep track of the possibility that each answer $$x \in S$$ and $$ x \not\in S$$ could be a lie. 
+1. Chips are removed from the board past the 0th slot, they are not possible $$x$$'s. 
 
-- Change the icon `images/favicon.png`.  
+If there are more than one chips on the board at the end of the game then Paul cannot determine between them which is $$x$$ and Carol wins. 
 
-- Replace the domain name in the `robots.txt`
+![](images/Coins.png)
 
-- Don't forget the `README.md`.  
 
-### 3. Start writing posts  
-Replace the existing example post and then add your own!  
-Have a look at the [Jekyll docs](http://jekyllrb.com/docs/posts/)
-about how to write blog posts.  
-To add tags to your posts, look into the example, you'll see that there is
-a line starting with `tags:`. Add your keywords there. 
 
-### 4. You're done  
-Take a stop on the Github project page. Feel free to give a star and share it with others!  
-You have questions, feedback or something to improve, mail me or open issues on github. Contributions are always welcome.  
-Thanks to them who have already [helped](https://github.com/lukas-h/material-theme/graphs/contributors) to improve, especially [@varundey](https://github.com/varundey)!  
-See the [Github Project](https://github.com/lukas-h/material-theme)  
+### Playing Chip-Liar: Examples
+#### Example 1
+Imagine asking "Is $$ x \in \left\{ 1,2,..., n \right\} $$?". Clearly it is. Carole could respond no, but would certainly use a lie and move the whole stack left one unit. 
+
+![](images/Coins2.png)
+
+#### Example 2
+Imagine asking "Is $$ x \in \left\{ 1,2 \right\} $$?"
+Carole could answer "No", and has either lied or told the truth.
+
+![](images/Coins3.png)
+
+ Or she could answer "Yes" and has either lied or told the truth. 
+
+![](images/Coins4.png)
+
+At each round Carole can choose to either move $$S$$ or $${S}^{c}$$ one space to the left.
+
+
+### Does a Chip Survive: Expected Value
+1. Consider Carole playing randomly, moving $S$ or ${S}^{c}$.
+1. For each $$c \in\left\{1,...,n\right\}$$ let $${I}_{c}$$ is 1 iff $$c$$ is on the board after $$q$$ rounds
+1. If $$c$$ is on position $$j$$, $$c$$ will survive if chosen $$\le j$$ times.
+
+#### Probability of Survival
+$$ E\left[ {I}_{c} \right] = \frac { 1 }{ {2}^{q} } \sum_{i=0}^{j}{\begin{pmatrix}  q \\  i \end{pmatrix}} \stackrel{def}{=} B(q,j)$$
+
+$$B(q,j)$$ to be the probability that a chip at $j$ survives q rounds.
+
+
+
+## Expected Values
+### Expected Number of Chips
+
+1. Number chips on each space is given by $$\left\{x_{1},...,{x}_{k}\right\}$$ 1. The expected total number of chips is $$C$$ is the number of chips in a position times the probability each will survive the game
+
+#### Expected total number of chips.
+$$E\left[C\right]= \sum_{c}{E\left[{I}_{c}\right]} =\sum_{i=0}^{k}{x_{i}B(q,i)}$$
+
+
+
+
+## Existence of a Winner
+#### Game Theory: Theorem
+In a game with perfect information, no hidden moves and no draws one player has a perfect winning strategy.
+
+$$E\left[C\right]$$ weighted average of possibilities. If $$E\left[C\right] > 1$$,
+
+1. $$E\left[C\right] = {C}_{1} \mu\left({C}_{1}\right)+...+{C}_{p} \mu\left({C}_{p}\right)>1 $$ implies $$\exists {C}_{k} > 1$$ with $$\mu\left({C}_{k}\right)>0$$ 
+1. If some $${C}_{k} > 1$$ with $$\mu\left({C}_{k}\right)>0$$ then Carole is able to win.
+1. So no strategy allows Paul to always win.
+1. But by the Theorem someone has a perfect strategy that always wins, so it must be Carole. 
+
+since $$\forall j$$ $$0\le{C}_{j}\le 1$$ and $$\sum_{j=0}^{p}{\mu\left({C}_{j}\right)}=1$$
+
+
+
+
+### Corollary
+
+1. $$E\left[C\right]=\sum_{i=0}^{k}{x_{i}B(q,i)}$$ gives $$\sum_{i=0}^{k}{x_{i}} B(q,k) = \left\{x_{1},...,{x}_{k}\right\} = \left\{0,...,n\right\}$$
+1. When $$ E\left[C\right]>1$$ and Carole wins this gives $$\sum_{i=0}^{k}{x_{i}} B(q,k)>1$$
+1. Rearranges to: $$\sum_{i=0}^{k}{x_{i}} > \frac{2^{q}}{B(q,k)}$$ and $$\sum_{i=0}^{k}{x_{i}} = n$$ yield
+
+#### Corollary - Carole wins the $$n$$ number, $$q$$ question, and $$k$$ lie game
+$$ n> \frac{2^{q}}{\sum_{i=0}^{k}{\begin{pmatrix}  q \\  i \end{pmatrix}}} $$
+
+$$ \text{(Probability of removing an x) * (the number of x's)} > \text{(total number of subsets of x's)}$$
+
+
+
+### De-randomization
+
+1. Random play is expected to yield the same result, so the initial position will decide a better move. 
+1. With $$l$$ moves remaining Carole's dominant strategy is to maximize the expected number of chips on the board playing randomly after moving $$S$$ or $${S}^{c}$$.
+
+#### Strategy
+$$ S\rightarrow \left({x}_{1}^{'},..., {x}_{k}^{'}\right) \text{ and }{S}^{c}\rightarrow \left({x}_{1}^{"},..., {x}_{k}^{"}\right) $$
+$$ E\left[{C}^{'}\right]=\sum_{i=0}^{k}{x_{i}^{'}B(l,i)} \text{ and } E\left[{C}^{"}\right]=\sum_{i=0}^{k}{x_{i}^{"}B(l,i)} $$
+$$\text{if } E\left[{C}^{'}\right]>E\left[{C}^{"}\right] \text{ then move } S \text{, otherwise move }{S}^{c}$$
+
