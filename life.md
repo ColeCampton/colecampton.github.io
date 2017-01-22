@@ -1,59 +1,70 @@
 ---
-layout: post
-title:  "Use my jekyll theme"
+layout: page
+title:  "Conway's Game of Life"
 date:   2016-09-19 22:10:00 +0200
-tags: ['english', 'jekyll', 'theme']
-author: "Lukas Himsel"
+tags: ['conway', 'game of life']
+author: "Cole Campton"
 ---
+![](images/ColeCampton.gif)
+Conway's Game of Life is a construction which distplays emergent behavior and has been studied as a point of interest in artificial intelligence. The game evolves based on an initial set up of the board but involves no players. The following are rules for the evolution of the board at discrete time steps. 
 
-## Hints
+1. Any live cell with fewer than two live neighbours dies, as if caused by underpopulation.
+1. Any live cell with two or three live neighbours lives on to the next generation.
+1. Any live cell with more than three live neighbours dies, as if by overpopulation.
+1. Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
 
-If you want to use my jekyll theme, follow the instructions and host it yourself. Easily setup as a Github page.  
 
-To add pages (for example a portfolio, an extra about page, and so on), you need to link them to the `index.html` manually. Required to configure in this dimensions is a bit of html and jekyll know-how. Reading the [Jekyll docs](http://jekyllrb.com/docs/pages/) could help. All other things are easy to edit and configure, even without much jekyll experience.  
+The purpose of this project was to investigate the intricate structure needed to create scrolling text in John Conway's Game of Life. In doing so I investigated several Game of Life structures and animated their full periods, coloring the transitions between stages. Below, red squares are squares that were alive in a previous stage and remain into the next (have two or three neighbors), yellow squares are squares that are no longer alive in the coming stage (do not have two or three neighbors), and green squares are grey dead squares that will come alive in the next stage (have exactly three living neighbors).
 
-#### Theme features  
-- Projects showcase  
-- RSS and ATOM feed  
-- Blogpost pagination  
-- SEO meta tags, *schema.org* structured data  
-- [twitter](https://dev.twitter.com/cards/getting-started) cards  
-- made with MaterializeCSS
-- Disqus comments  
+## Overall Structure
+![](images/PixelCreators.png)
 
-## Setup
+Shown above are eight pathways that each create pixels at a different height. A glider travels counter-clockwise, splits, then is ejected as a LWSS traveling to the left while the clone remains in the system.
 
-### 1. Get the sources
+* The pixel cycle takes 598 generations
+* The glider split happens at generations 325 to 333
+* The split glider re-enters the cycle between generation 405 and 411
+* The glider is transformed into an LWSS between 551 and 554
 
-#### 1.1 Clone
 
-Clone the repository from github:  
-[https://github.com/lukas-h/material-theme.git](https://github.com/lukas-h/material-theme.git)   
+![](images/Pathway.png)
 
-#### 1.2 or download  
-[https://github.com/lukas-h/material-theme/archive/gh-pages.zip](https://github.com/lukas-h/material-theme/archive/gh-pages.zip)  
+## The Glider
+![](images/glider.gif)
 
-### 2. Configure  
-- Replace all the configuration in `_config.yml` and `_data/projects.yml` by your own data. Change the name, email address, configure your your language settings.  
-And most important: change the site's URL! Optionally add your google analytics ID.
+The glider is the automata unit that allows for controlled movement in the loop. It has four generations. The transition is shown on the right with disappearing in yellow, appearing in green and remaining squares in red.
 
-- Put your address and legal info into `imprint.html`.  
+![](images/allglider.png)
 
-- Change the icon `images/favicon.png`.  
+# The Glider Direction Change
+The glider is directed in a loop to that determines when pixels are released. 
+This is the process the glider goes through in being directed 90 degrees counter-clockwise that allows for the system to create a controlled cycle.
 
-- Replace the domain name in the `robots.txt`
+![](images/allDirectionChange.png)
 
-- Don't forget the `README.md`.  
+## The Glider Split
+Through a seemingly chaotic collision in the lower right portion of the cycle the glider is split into two. 
 
-### 3. Start writing posts  
-Replace the existing example post and then add your own!  
-Have a look at the [Jekyll docs](http://jekyllrb.com/docs/posts/)
-about how to write blog posts.  
-To add tags to your posts, look into the example, you'll see that there is
-a line starting with `tags:`. Add your keywords there. 
+![](images/allGliderSplit.png)
 
-### 4. You're done  
-Take a stop on the Github project page. Feel free to give a star and share it with others!  
-You have questions, feedback or something to improve, mail me or open issues on github. Contributions are always welcome.  
-Thanks to them who have already [helped](https://github.com/lukas-h/material-theme/graphs/contributors) to improve, especially [@varundey](https://github.com/varundey)!  
-See the [Github Project](https://github.com/lukas-h/material-theme)  
+## The Glider Split Redirection
+
+The newly created glider then enters a collision to be redirected towards the starting position of the original glider. The original glider continues past.
+
+![](images/gliderSplitDC2.png)
+
+## Glider to LWSS
+The Light Weight Spaceship is an automata which proceeds stably in a coordinate axis direction.
+
+![](images/Lwss.gif)
+
+The conversion of the glider into a Lightweight Spaceship creates each pixel that travels to the let across the screen.This occurs by another collision with a similar oscillating form.
+
+![](images/GliderToLWSS.png)
+
+The system appears extremely chaotic as it is input, but the system is still deterministic at it's root and can be formulated into a predictable output so that it is programmable. 
+
+
+Make one for yourself! [The repository](https://github.com/cipan/life-gen/) , with instructions included/
+
+The code is a correction to [Thomas Robinson's program](http://tlrobinson.net/blog/2009/02/game-of-life-generator/), to accommodate recent changes to Ruby.

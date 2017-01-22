@@ -13,9 +13,9 @@
 # - name: Summer in Biostatistics
 #   link: "/SIBS.html"
 #   description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam"
-# - name: The Game of Life
-#   link: "/life.html"
-#   description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam"
+- name: The Game of Life
+  link: "/life.html"
+  description: "Abusing the determinism of the seemingly chaotic Game of Life by Conway to create scrolling text."
 # - name: Blue Spot Health
 #   link: "/bluespot.html"
 #   description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam"
