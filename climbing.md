@@ -1,59 +1,60 @@
 ---
-layout: post
-title:  "Use my jekyll theme"
+layout: page
+title:  "Climbing"
 date:   2016-09-19 22:10:00 +0200
-tags: ['english', 'jekyll', 'theme']
-author: "Lukas Himsel"
+tags: ['climbing', 'reed', 'bouldering']
+author: "Cole Campton"
 ---
 
-## Hints
+The community that comes with climbing is one of the best parts of the sport. The Reed College Mountaineering Club helped me to feel comfortable and taught me to love the sport.
 
-If you want to use my jekyll theme, follow the instructions and host it yourself. Easily setup as a Github page.  
+![](images/Climbing/Smithpano.JPG)
 
-To add pages (for example a portfolio, an extra about page, and so on), you need to link them to the `index.html` manually. Required to configure in this dimensions is a bit of html and jekyll know-how. Reading the [Jekyll docs](http://jekyllrb.com/docs/pages/) could help. All other things are easy to edit and configure, even without much jekyll experience.  
+I first had the chance to climb outdoors with the club at Smith Rock in eastern Oregon. 
 
-#### Theme features  
-- Projects showcase  
-- RSS and ATOM feed  
-- Blogpost pagination  
-- SEO meta tags, *schema.org* structured data  
-- [twitter](https://dev.twitter.com/cards/getting-started) cards  
-- made with MaterializeCSS
-- Disqus comments  
+![](images/Climbing/smithapproach.JPG)
 
-## Setup
+I learned that climbing outdoors was nothing like my gym experience.
 
-### 1. Get the sources
+![](images/Climbing/smithclimb.JPG)
 
-#### 1.1 Clone
+With the support of the club I decided to spend the time to get certified as a Wilderness First Responder through the Wilderness Medical Training Center. Safety first!
 
-Clone the repository from github:  
-[https://github.com/lukas-h/material-theme.git](https://github.com/lukas-h/material-theme.git)   
+![](images/Climbing/WFR.JPG)
 
-#### 1.2 or download  
-[https://github.com/lukas-h/material-theme/archive/gh-pages.zip](https://github.com/lukas-h/material-theme/archive/gh-pages.zip)  
+Armed with first aid training, I was comfortable enough to get out and climb on my own in Joshua Tree, California.
 
-### 2. Configure  
-- Replace all the configuration in `_config.yml` and `_data/projects.yml` by your own data. Change the name, email address, configure your your language settings.  
-And most important: change the site's URL! Optionally add your google analytics ID.
+![](images/Climbing/JoshuaTree.JPG)
 
-- Put your address and legal info into `imprint.html`.  
+Also with the support of friends I had the chance to get out during the week and practice leading at Broughton Bluff and Ozone just outside of Portland, Oregon. 
 
-- Change the icon `images/favicon.png`.  
+![](images/Climbing/broughton.JPG)
 
-- Replace the domain name in the `robots.txt`
+![](images/Climbing/ozoneOR.JPG)
 
-- Don't forget the `README.md`.  
+Soon I felt comfortable on multi-pitch climbing and set out to climb Monkey's Face at Smith Rock, Oregon. We approached the northern side and reached the bolt-ladder after a few pitches. We made it into the 'mouth', the cave on the right side of the pillar.
 
-### 3. Start writing posts  
-Replace the existing example post and then add your own!  
-Have a look at the [Jekyll docs](http://jekyllrb.com/docs/posts/)
-about how to write blog posts.  
-To add tags to your posts, look into the example, you'll see that there is
-a line starting with `tags:`. Add your keywords there. 
+![](images/Climbing/monkeysface.JPG)
 
-### 4. You're done  
-Take a stop on the Github project page. Feel free to give a star and share it with others!  
-You have questions, feedback or something to improve, mail me or open issues on github. Contributions are always welcome.  
-Thanks to them who have already [helped](https://github.com/lukas-h/material-theme/graphs/contributors) to improve, especially [@varundey](https://github.com/varundey)!  
-See the [Github Project](https://github.com/lukas-h/material-theme)  
+The view from the mouth is astonishing.
+
+![](images/Climbing/mouthview.JPG)
+
+<!--After a frightening traverse out the side of the mouth, we made it to the top of the Monkey's Face head.
+
+![](images/Climbing/monkeyshead.JPG) -->
+
+And eventually I had the chance to return to Smith Rock once again with the Mountaineering Club. 
+
+![](images/Climbing/smithtent.JPG)
+
+![](images/Climbing/belay.JPG)
+
+I had the chance to repay the favor of leading and belaying newer climbers up a few routes. It's a nice feeling to have made it full-circle. 
+
+![](images/Climbing/leading.JPG)
+
+Afterwards we stopped by Juniper Junction for some of their famous Huckleberry ice cream. 
+
+![](images/Climbing/mountaineeringclub.JPG)
+

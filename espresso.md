@@ -1,59 +1,34 @@
 ---
-layout: post
-title:  "Use my jekyll theme"
+layout: page
+title:  "Coffee and Espresso"
 date:   2016-09-19 22:10:00 +0200
-tags: ['english', 'jekyll', 'theme']
-author: "Lukas Himsel"
+tags: ['coffee', 'espresso' ]
+author: "Cole Campton"
 ---
 
-## Hints
+![](images/elektra.JPG)
 
-If you want to use my jekyll theme, follow the instructions and host it yourself. Easily setup as a Github page.  
+To me preparing coffee is a calming ritual that allows me to seek perfection, the godshot, as it is called. It's a satisfying pursuit that rewards us with delicous coffee along the way. 
 
-To add pages (for example a portfolio, an extra about page, and so on), you need to link them to the `index.html` manually. Required to configure in this dimensions is a bit of html and jekyll know-how. Reading the [Jekyll docs](http://jekyllrb.com/docs/pages/) could help. All other things are easy to edit and configure, even without much jekyll experience.  
+In the process we learn what is important in making great coffee: the beans, the roast, grind, the ratio, the brew time, the machine. 
+## The Beans
+### Arabica versus Robusta
 
-#### Theme features  
-- Projects showcase  
-- RSS and ATOM feed  
-- Blogpost pagination  
-- SEO meta tags, *schema.org* structured data  
-- [twitter](https://dev.twitter.com/cards/getting-started) cards  
-- made with MaterializeCSS
-- Disqus comments  
+## The Roast
+![](images/weightvvol.jpeg)
+Above we see differences in the roast time of the same beans with equivalent mass.
+## The Grind
+Much has been learned about how grinders effect the extraction of coffee. The general consensus has been that burr grinders create a more consistent grind than blade grinders. 
+Within the family of burr grinders there are both conical and flat burr grinders. The difference in design between these two categories leads to differences in the distribution of volume and mass of particles produced. It is believed that flat burr grinders are perferable for espresso due to the fine-heavy grind, while conical grinders are preferable for pour over. 
 
-## Setup
+### The Titan Grinder Project
+While the preferential nature of what a 'good' cup of coffee prevents a correlation between 'good' coffee and these factors, the Titan Grinder project has sought to measure how grinding equiptment effects the grind produced.
 
-### 1. Get the sources
+Titan grinders: the Macap MXK conical burr grinder, the Mazzer Robur conical burr grinder, and the Mazzer Super Jolly flat burr grinder
 
-#### 1.1 Clone
+The project used a single QuickMill Vetrano espresso machine and with each of three grinders adjusted grind to achieve a 60mL shot in 30 seconds with a 19g dose of the same roast of a Kenyan bean. The concept being that holding volume, shot extraction time constant, mass, bean and roast constant 
+#### Flat Burr Particle Distributions
 
-Clone the repository from github:  
-[https://github.com/lukas-h/material-theme.git](https://github.com/lukas-h/material-theme.git)   
 
-#### 1.2 or download  
-[https://github.com/lukas-h/material-theme/archive/gh-pages.zip](https://github.com/lukas-h/material-theme/archive/gh-pages.zip)  
+#### Flat versus Conical
 
-### 2. Configure  
-- Replace all the configuration in `_config.yml` and `_data/projects.yml` by your own data. Change the name, email address, configure your your language settings.  
-And most important: change the site's URL! Optionally add your google analytics ID.
-
-- Put your address and legal info into `imprint.html`.  
-
-- Change the icon `images/favicon.png`.  
-
-- Replace the domain name in the `robots.txt`
-
-- Don't forget the `README.md`.  
-
-### 3. Start writing posts  
-Replace the existing example post and then add your own!  
-Have a look at the [Jekyll docs](http://jekyllrb.com/docs/posts/)
-about how to write blog posts.  
-To add tags to your posts, look into the example, you'll see that there is
-a line starting with `tags:`. Add your keywords there. 
-
-### 4. You're done  
-Take a stop on the Github project page. Feel free to give a star and share it with others!  
-You have questions, feedback or something to improve, mail me or open issues on github. Contributions are always welcome.  
-Thanks to them who have already [helped](https://github.com/lukas-h/material-theme/graphs/contributors) to improve, especially [@varundey](https://github.com/varundey)!  
-See the [Github Project](https://github.com/lukas-h/material-theme)  
