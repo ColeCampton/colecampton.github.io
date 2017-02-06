@@ -67,7 +67,7 @@ At each round Carole can choose to either move $$S$$ or $${S}^{c}$$ one space to
 #### Probability of Survival
 $$ E\left[ {I}_{c} \right] = \frac { 1 }{ {2}^{q} } \sum_{i=0}^{j}{\begin{pmatrix}  q \\  i \end{pmatrix}} \stackrel{def}{=} B(q,j)$$
 
-$$B(q,j)$$ to be the probability that a chip at $j$ survives q rounds.
+$$B(q,j)$$ to be the probability that a chip at $$j$$ survives q rounds.
 
 
 
