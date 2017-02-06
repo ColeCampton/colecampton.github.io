@@ -91,7 +91,8 @@ $$
     &= \frac{1}{\pi}( \frac{1}{2}(1-\sqrt{1-x})\frac{1}{2}(1+\sqrt{1-x}))^{-1/2} = \frac{2}{\pi\sqrt{x}}
 \end{align*}
 $$
-Then by noting that $$\rho(x)=\rho(1-x)$$ it follows that 
+Then by noting that $$\rho(x)=\rho(1-x)$$ it follows that
+ 
 $$ \rho_{t+1} = \frac{1}{4\sqrt{1-x}} (\rho_t(\frac{1}{2}(1-\sqrt{1-x}))+ \rho_t(\frac{1}{2}(1+\sqrt{1-x})))
 = \frac{1}{\pi\sqrt{x(1-x)}}=\rho_t $$
 
@@ -148,6 +149,7 @@ There is no analytic solution to the invariant distribution of these maps.
 We see a fantastic display of the Birkhoff Ergodic Theorem as the time orbit of a point, whose histogram is shown below in blue, approximates the Perron-Frobenius numerical approximation of the invariant distribution, shown below in red.
 
 Let $$\alpha =0.7$$, $$\beta =0.2$$, $$\gamma=0.8/(1+\alpha)$$. 
+
 $$f(x)=\begin{cases} \alpha x +0.2 & 0\le x\le \gamma \\
 \alpha^{-1}(x-0.8)+1 & \gamma\le x \le 0.8 \\
 -\beta^{-1} (x-1) & 0.8 \le x\le 1 \end{cases}$$

@@ -65,6 +65,8 @@ The conversion of the glider into a Lightweight Spaceship creates each pixel tha
 The system appears extremely chaotic as it is input, but the system is still deterministic at it's root and can be formulated into a predictable output so that it is programmable. 
 
 
-Make one for yourself! [The repository](https://github.com/cipan/life-gen/) , with instructions included/
+<!-- Make one for yourself! [The repository](https://github.com/cipan/life-gen/) , with instructions included. -->
 
-The code is a correction to [Thomas Robinson's program](http://tlrobinson.net/blog/2009/02/game-of-life-generator/), to accommodate recent changes to Ruby.
+<!--The code is a correction to [Thomas Robinson's program](http://tlrobinson.net/blog/2009/02/game-of-life-generator/), to accommodate recent changes to Ruby. -->
+
+Make one for yourself! [The repository](https://github.com/tlrobinson/life-gen) courtesy of Thomas Robinson, with instructions included.
