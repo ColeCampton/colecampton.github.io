@@ -38,13 +38,18 @@ Above all though, the experience allowed me to build amazing friendships through
 Beyond the opportunity to explore a beautiful city, Eastern Europe is amazingly accessible by train and plane. It is incredibly cheap to travel to amazing places, especially when a beautiful city is a minute's walk to the train station away. This meant that Spring break was as luxurious as any ever had.
 
 I had the chance to travel to Barcelona
+
 ![](images/BSM/barcelona.JPG)
 And Berlin
+
 ![](images/BSM/berlin.JPG)
 
 When the semester came to an end I took the opportunity of being where I was to cross destinations off of my wish list. In Rome I saw the Collesium, the Roman Forum and numerous other attractions.
-![](images/BSM/rome.JPG)
+
+![](images/BSM/Rome.JPG)
 Florence was perfect for beautiful walks by the river and an unhealthy amount of gelato.
+
 ![](images/BSM/florence.JPG)
 Venice was truely a dream city. The trip was completed by a visit to the Elektra SLR factory in nearby Treviso. 
+
 ![](images/BSM/venice.JPG)
