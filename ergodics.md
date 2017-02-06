@@ -13,7 +13,7 @@ In the investigation of chaotic systems it is clear that hopes of predicting lon
 
 An **Ergodic Endomorphism** or measure preserving map is a map $$T: X\rightarrow X$$ where for measure $$\mu$$ it is the case that $$T$$ satisfies
 
-1. \\(T\\) is surjective
+1. $$T$$ is surjective
 1. $$T$$ is measureable 
 1. $$\mu(T^{-1}A)=\mu(A)$$ for all $$A$$ in the sigma algebra on $$X$$, for preimage $$T^{-1}(A)$$.
 
