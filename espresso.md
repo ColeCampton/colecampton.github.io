@@ -9,7 +9,9 @@ author: "Cole Campton"
 ![](images/elektra.JPG)
 
 In the process we learn what is important in making great coffee: the beans, the roast, grind, the ratio, the brew time, the machine. The goal is to control these parameters to make a cup of coffee that is not diluted by managing the brew ratio, extracted properly. A finer grind leads to a longer brew time, while using less coffee simulateously may hold the brew time constant for some water-to-coffee ratio. These opposing effects are managed to find the sweet spot between over and under extraction. Under extraction causes a sour, metallic taste while over extraction causes bitter notes. The ideal balance leads to a cup that is almost sweet. 
+
 ## The Beans
+
 ### Arabica versus Robusta
 The reference of this section is Andrea Illy's Espresso Coffee: The Science of Quality, an encyclopedic book reccomended to anyone interested in learning more about coffee. 
 
@@ -26,12 +28,15 @@ The better taste of arabica coffees is often attributed to the presence of 60% m
 > Chlorogenic acids contribute to astringent notes, so the reduced amounts in arabica favours its final cup quality. It is known that many aromatic volatile compoiunds are dissolved (trapped) in oil droplets and released during brewing, so the oil fraction may explain some differences in cup quality between arabica and robusta, particularly in espresso. The influence of the relatve composition of the lipid fractions in coffee on final cup quality is not yet well understood. The major lipid fractions in arabica include (Fonseca and Gutierrez, 1971) linoleic acid (C18:1, 47%), palmitic acid (C16:0, 41%), oleic acid (C18:2, 6.4%) and stearic acid (C18:0, 6%).
 
 As a quick reminder, the parenthetical elements above are lipid numbers. Lipid numbers take the form C:D, where C is the number of carbon atoms in the fatty acid and D is the number of double bonds in the fatty acid. 
+
 ## The Roast
 ![](images/weightvvol.jpeg)
 Above we see differences in the roast time of the same beans with equivalent mass. It's an important reminder that measuring the mass of beans may be the best approach in addressing extraction issues. 
+
 ## The Grind
 Much has been learned about how grinders effect the extraction of coffee. The general consensus has been that burr grinders create a more consistent grind than blade grinders. 
 Within the family of burr grinders there are both conical and flat burr grinders. The difference in design between these two categories leads to differences in the distribution of volume and mass of particles produced. It is believed that flat burr grinders are perferable for espresso due to the fine-heavy grind, while conical grinders are preferable for pour over. 
+
 ### Grinder Types
 There are two main varieties of grinders, conical and flat burr grinders. Unfortunately because grinds sit in the grinding chamber of a blade grinder, the grind size is uncontrollable and for that reason is not usually taken seriously. We see how the structure of burr grinders allows for adjustment of grind size. 
 ![](/images/Titan/mxkburr.jpg)
@@ -49,6 +54,7 @@ While the preferential nature of what a 'good' cup of coffee prevents a correlat
 Titan grinders: the Macap MXK 63mm conical burr grinder, the Mazzer Robur 71mm conical burr grinder, and the Mazzer Super Jolly 64mm flat burr grinder. 
 
 The project used a single QuickMill Vetrano espresso machine and with each of three grinders adjusted grind to achieve a 60mL shot in 30 seconds with a 19g dose of the same roast of a Kenyan bean. The concept being that holding volume, shot extraction time constant, mass, bean and roast constant 
+
 #### Dry Analysis
 The analysis of grounds prior to brewing. 
 ![](/images/Titan/numberpartdry.png)
@@ -68,16 +74,19 @@ The analysis of grounds after having a shot pulled and baking the ground pucks d
 ![](/images/Titan/voldry.png)
 
 From these wet analyses Weiss makes the following conclusions:
+
 > The wet and dry volume-based size distributions are reasonably consistent. The wet large peak and the dry small peak have shifted to the right (towards larger particle sizes), presumably due to swelling and clumping, respectively. There are some interesting changes in curve shapes as well. But these effects are relatively minor, and could be partially attributed to the two-day lag between wet and dry sample analyses.
 
 
 ## Brewing Methods
 One may hear of different brewing methods being referred to as some 'wave' in coffee consumption. This refers to the benchmark changes in the ways that people have consumed coffee over time. The first wave being the development of instant coffees which brought coffee consumption to the general public, rather than being a luxury that few had access to. The second wave refers to the spread of espresso drinks, the drink being made to order for a customer. The third wave being the current development of made to order non-espresso drinks.
 In each of these cases, Andrea Illy teaches us that coffee is to be brewed just under boiling temperatures to prevent the over extraction of astringent and bitter, usually less solavble substances, which give a burnt taste to the brew. 
+
 ### Pour Over
 Pour over is the root of the third wave. Pour over coffees are usually brewed with a gooseneck kettle for percision of pour, as rate of pour and location has large effects on extraction. Pour overs often are done with paper filters of varying thickness, which remove portions of the coffee's oil and give a different taste profile. In other cases nonreactive gold-plated filters are used to allow all oils to pass into the cup unchanged. 
 The Chemex is a pour over method which uses thick filters to provide a very clean cup. 
 ![](images/Titan/Chemex1.jpeg)
+
 ### Steeping
 These methods are familiar to most people, namely due to the french press. Lately the [Aeropress](https://aerobie.com/product/aeropress/) has become a popular method of brewing because a paper or metal filter allows one to make a cup similar to that of a french press without the worry of fine grinds making their way into the cup. Using the aeropress with the inverted brewing method makes for a tasty cup and quick and easy clean up.
 ![](/images/Titan/aeropress.jpeg)
@@ -93,4 +102,5 @@ Espresso coffee is the heart of the second wave, and still is alive and well. Es
 Andrea Illy, of Illy Coffee, is the author of a well referenced book on espresso coffee, *Espresso Coffee: The Science of Quality*. Illy explains that the word espresso refers to the practice of the drink being prepared upon request, rather than the speed at which it is prepared. The reason for this distinction is that once brewed, espresso has a characteristic brown foam called the *crema* which dissipates quickly after brewing. For this reason the drink is meant to be consumed soon after it is made. 
 
 Illy also explains why the beverage is brewed under high pressures, frequently around 10 bars. 
+
 > A pressure field applied within a fluid produces potential energy - what is known as Bernoulli's piezometric energy - which can be easily transformed into kinetic energy, and further transformed into surface potential energy and heat. Pressure is important for the definition of espresso, making it different from other brews. During espresso percolation, a small amount of hot water under pressure is applied to a layer of ground roasted coffee, the *coffee cake*, and this very efficiently produces a concentrated brew, containing not only soluble solids, but also lipophilic substances, lacking in filter and instant coffees. The foam on the top and opaque brew are unique to espresso, owing to the presence of a disperse phase formed by very small oil droplet in emulsion (Petraccim, 1989), which are precieved in the mouth as a special creamy sensationl, the *body*. Furthermore, the oil droplets preserve many volatile aromatic components, which would otherwise either escape into the atmosphere or be destroyed by contact with water as in other brewing techniques, so that the rich coffee taste lingers in the mouth for several minutes. 
