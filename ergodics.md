@@ -22,8 +22,11 @@ An **Ergodic Endomorphism** or measure preserving map is a map $$T: X\rightarrow
 ### Birhoff's Ergodic Theorem
 Let $$T$$ be an ergodic endomorphism of the probability space $$X$$ with measure $$\mu$$ and let $$f:X\rightarrow \mathbb{R} $$ be a real-valued measurable function. Then for almost every $$x \in X$$, we have
 $$\lim_{n\rightarrow \infty} \frac{1}{n}\sum_{j=0}^{n}{f\circ T^j(x)} = \int_{X} f d\mu$$ 
+
  A simple measureable function is the characteristic function $$f$$ of some subset $$A\subset X$$.
+ 
 $$f(x)=\begin{cases} 1 & \text{ if }x\in A \\ 0 & \text{ if }x\not\in A \end{cases}$$
+
 The statement of Birkhoff's Theorem is that for almost all initial points, the time-wise average converges to the space-wise average. More precisely that is for all but a set of measure zero initial points $$x_0$$, the average value over the 'time evolution' orbit of the point $$x_0$$, given by $$\{T^j(x_0)\}$$, is given by the invariant distribution $$\mu$$.
 
 ## Logistic Maps 
@@ -42,7 +45,7 @@ A graph of the evolution of the logistic map for $$r=4$$ can be seen below.
 
 
 ![](images/Logistic_map_scatterplots_large.png)
-We may observer the chaotic behavior of the logistic map by selecting a random initial point $$X_0$$ in the domain, and a second random point initial point $$X_0^{'}$$ within some $$\epilson=10^{-8}$$ of $$X_0$$.
+We may observer the chaotic behavior of the logistic map by selecting a random initial point $$X_0$$ in the domain, and a second random point initial point $$X_0^{'}$$ within some  $$ \epsilon=10^{-8} $$ of $$X_0$$.
 
 We see that within 100 time iterations, the values of the two points have dispersed.
 ![](images/ShortLogisticComp.png)
@@ -78,6 +81,7 @@ $$
 \end{align*}
 $$
 First note that the previous display is an expression between distributions under iterations of the map. This expression is solvable and we may verify that $$\rho(x)=\frac{1}{\pi\sqrt{x(1-x)}}$$ is the unique solution. We see that 
+
 $$
 \begin{align*}
     \rho(\frac{1}{2}(1-\sqrt{1-x})) &= \frac{1}{pi}( \frac{1}{2}(1+\sqrt{1-x})(1-\frac{1}{2}(1+\sqrt{1-x})))^{-1/2}\\
@@ -112,7 +116,7 @@ $$ \mathbb{I}_{\mathbb{B}_i}(x)=\begin{cases} 1 & x\in \mathbb{B}_i \\ 0 & x\not
 Then the Perron-Frobenius operator is given by $$P=(p_{ij})\in \mathbb{R}^{k \times k}$$
 $$ p_{ij} = \frac{\mu(T^{-1}(\mathbb{B}_j)\cap \mathbb{B}_i)}{\mu(\mathbb{B}_i)}$$
 
-For example,
+For example
 
 $$ P_{\text{SOM}}=\small{\begin{pmatrix} 0 & 0.572 & 0.428 & 0 & 0 & 0 & 0 & 0 \\ 
  0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 \\ 
