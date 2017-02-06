@@ -48,12 +48,15 @@ A graph of the evolution of the logistic map for $$r=4$$ can be seen below.
 We may observer the chaotic behavior of the logistic map by selecting a random initial point $$X_0$$ in the domain, and a second random point initial point $$X_0^{'}$$ within some  $$ \epsilon=10^{-8} $$ of $$X_0$$.
 
 We see that within 100 time iterations, the values of the two points have dispersed.
+
 ![](images/ShortLogisticComp.png)
 
 The residues of the points shows the dispersion of the points.
+
 ![](images/LogisticResidues.png)
 
 In the long term iterations of the map orbit the co-domain fast enough to fill the plot.
+
 ![](images/LongLogistic.png)
 
 
