@@ -13,7 +13,7 @@ In the investigation of chaotic systems it is clear that hopes of predicting lon
 
 An **Ergodic Endomorphism** or measure preserving map is a map $$T: X\rightarrow X$$ where for measure $$\mu$$ it is the case that $$T$$ satisfies
 
-1. $$T$$ is surjective
+1. \\(T\\) is surjective
 1. $$T$$ is measureable 
 1. $$\mu(T^{-1}A)=\mu(A)$$ for all $$A$$ in the sigma algebra on $$X$$, for preimage $$T^{-1}(A)$$.
 
@@ -23,7 +23,7 @@ Let $$T$$ be an ergodic endomorphism of the probability space $$X$$ with measure
 $$\lim_{n\rightarrow \infty} \frac{1}{n}\sum_{j=0}^{n}{f\circ T^j(x)} = \int_{X} f d\mu$$ 
  A simple measureable function is the characteristic function $$f$$ of some subset $$A\subset X$$.
 $$f(x)=\begin{cases} 1 & \text{ if }x\in A \\ 0 & \text{ if }x\not\in A \end{cases}$$
-The statement of Birkhoff's Theorem is that for almost all initial points, the time-wise average converges to the space-wise average. More precisely that is for all but a set of measure zero initial points $$x_0$$, the average value over the 'time evolution' orbit of the point $$x_0$$, given by $$\{T^j(x_0)\}$$, is given by the invariant distribution $$\mu$$. }
+The statement of Birkhoff's Theorem is that for almost all initial points, the time-wise average converges to the space-wise average. More precisely that is for all but a set of measure zero initial points $$x_0$$, the average value over the 'time evolution' orbit of the point $$x_0$$, given by $$\{T^j(x_0)\}$$, is given by the invariant distribution $$\mu$$.
 
 ## Logistic Maps 
 The family of logistic maps are maps, for some value $$r\in [0,4]$$ are given by
