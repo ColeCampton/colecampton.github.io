@@ -16,6 +16,7 @@ Each application of the methods follows the same general workflow
 In the abstract this seems to be an obvious technique. The following provides an example to allow the reader to appreciate the magic-like power of Erdős' Probabilistic Method.
 
 ## The Chip-Liar Game
+
 ### Example: The Liar Game
 
 1. Paul asks $$ q $$ questions in the form "Is $$ x\in S $$?" for any subset $$S$$
@@ -41,6 +42,7 @@ If there are more than one chips on the board at the end of the game then Paul c
 
 
 ### Playing Chip-Liar: Examples
+
 #### Example 1
 Imagine asking "Is $$ x \in \left\{ 1,2,..., n \right\} $$?". Clearly it is. Carole could respond no, but would certainly use a lie and move the whole stack left one unit. 
 
@@ -83,6 +85,7 @@ $$E\left[C\right]= \sum_{c}{E\left[{I}_{c}\right]} =\sum_{i=0}^{k}{x_{i}B(q,i)}$
 
 
 ## Existence of a Winner
+
 #### Game Theory: Theorem
 In a game with perfect information, no hidden moves and no draws one player has a perfect winning strategy.
 

@@ -5,6 +5,7 @@ date:   2016-09-19 22:10:00 +0200
 tags: ['ergodic', 'birhoff', 'dynamic systems']
 author: "Cole Campton"
 ---
+
 ## Introduction
 
 In the investigation of chaotic systems it is clear that hopes of predicting long term behavior is is futile. However, from the investigation of chaotic systems Ergodic Theory has arisen in order to predict the average long term behavior of dynamic systems. It is our intent to investigate the theoretical results of a main result of Ergodic Theory, namely that of Birkhoff's Ergodic Theorem.
@@ -131,6 +132,7 @@ Then since $$\mu(T^{-1}(\mathbb{B}_j)\cap \mathbb{B}_i)= \int \mathbb{I}_{\mathb
 
 Then finally for the matrix $$P=(p_{ij})$$, we may evaluate the invariant distribution $$P\rho = \rho$$ as the eigenvector giving the discrete distribution, for eigenvalue $$\lambda=1$$.
 }
+
 ## The Shobu-Ose-Mori Map
 
 The **Shobu-Ose-Mori** map allows for a demonstration of the power of the discretization of the Perron-Frobenius operator. These maps are defined as 

@@ -33,6 +33,7 @@ Nearby is the beautiful St. Stephen's Basilica and nearby amazing rose-shaped ic
 ![](images/BSM/basillica.JPG)
 Above all though, the experience allowed me to build amazing friendships through the comradery of difficult and interesting courses.
 ![](images/BSM/roomates.JPG)
+
 ## Travel
 Beyond the opportunity to explore a beautiful city, Eastern Europe is amazingly accessible by train and plane. It is incredibly cheap to travel to amazing places, especially when a beautiful city is a minute's walk to the train station away. This meant that Spring break was as luxurious as any ever had.
 
