@@ -4,6 +4,7 @@ title:  "The Elektra Factory"
 date:   2016-09-19 22:10:00 +0200
 tags: ['coffee', 'espresso', 'elektra', 'microcasa a leva']
 author: "Cole Campton"
+type: "interests"
 ---
 
 I was lucky enough to arrange a trip to tour the Elektra factory in Treviso, Italy which is a thirty minute train ride from Venice. I wanted to share some photos from the trip!

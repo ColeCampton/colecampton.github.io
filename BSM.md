@@ -4,6 +4,7 @@ title:  "Budapest Semesters in Mathematics"
 date:   2016-09-19 22:10:00 +0200
 tags: ['BSM', 'Budapest', 'math','hungary']
 author: "Cole Campton"
+type: "interests"
 ---
 
 While completing my math degree at Reed College I had the chance to study abroad at the [Budapest Semesters in Mathematics](https://www.budapestsemesters.com/). The experience was fantastic, I would encourage anyone with a passion for math and room in their schedule to consider the program. This posting is meant to be a sort of advertisement of the opportunities that Hungary and travel nearby offer.

@@ -24,7 +24,7 @@ disqus_shortname:
 # language settings
 isolang: en
 close_btn: "Close"
-home_btn: "Home"
+home_btn: "See More"
 projects_btn: "Interests"
 about_btn: "About"
 posts_btn: "Projects"
