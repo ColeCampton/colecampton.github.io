@@ -44,20 +44,20 @@ $$ X_{t+1} = T(X_t) $$
 A graph of the evolution of the logistic map for $$r=4$$ can be seen below.
 
 
-![](images/Logistic_map_scatterplots_large.png)
+![](images/Logistic_map_scatterplots_large.png?style=centerme)
 We may observer the chaotic behavior of the logistic map by selecting a random initial point $$X_0$$ in the domain, and a second random point initial point $$X_0^{'}$$ within some  $$ \epsilon=10^{-8} $$ of $$X_0$$.
 
 We see that within 100 time iterations, the values of the two points have dispersed.
 
-![](images/ShortLogisticComp.png)
+![](images/ShortLogisticComp.png?style=centerme)
 
 The residues of the points shows the dispersion of the points.
 
-![](images/LogisticResidues.png)
+![](images/LogisticResidues.png?style=centerme)
 
 In the long term iterations of the map orbit the co-domain fast enough to fill the plot.
 
-![](images/LongLogistic.png)
+![](images/LongLogistic.png?style=centerme)
 
 
 ## Calculating Invariant Distribution
@@ -100,7 +100,7 @@ $$ \rho_{t+1} = \frac{1}{4\sqrt{1-x}} (\rho_t(\frac{1}{2}(1-\sqrt{1-x}))+ \rho_t
 ## Comparing Time and Invariant Distribution
 We may then plot the histogram produced by selecting a random initial position and evaluating the function over a period of several steps. Below we sample a random point in $$[0,1]$$ for 1 million steps then by breaking the domain into one thousand intervals we may approximate a histogram giving the distribution of the logistic function with respect to time. For comparison we plot our analytic invariant space solution. 
 
-![](images/LogTimeSpace.png)
+![](images/LogTimeSpace.png?style=centerme)
 
 ## The Perron-Frobenius Operator
 
@@ -154,4 +154,4 @@ $$f(x)=\begin{cases} \alpha x +0.2 & 0\le x\le \gamma \\
 \alpha^{-1}(x-0.8)+1 & \gamma\le x \le 0.8 \\
 -\beta^{-1} (x-1) & 0.8 \le x\le 1 \end{cases}$$
 
-![](images/ShobuPlot.png)
+![](images/ShobuPlot.png?style=centerme)
