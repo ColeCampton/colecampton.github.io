@@ -117,7 +117,11 @@ We note that this is exactly the form of the expression we obtained in evaluatin
 In their paper  Klaus, Koltai, Sch{\"u}tte \cite{PFO} give a numerical method adapted from Ulam's Monte Carlo method. Ulam's method is a projection from the Perron-Frobenius operator's Banach space to a subspace spanned by indicator functions, of the type given as example in the introduction of the Birkhoff Ergodic Theorem. For simplicity we may simply split the codomain into $$N$$ small intervals $$ \mathbb{B}_i = [\frac{i}{N},\frac{i+1}{N}]$$ 
 
 $$ \mathbb{I}_{\mathbb{B}_i}(x)=\begin{cases} 1 & x\in \mathbb{B}_i \\ 0 & x\not\in \mathbb{B}_i \end{cases}$$
-Then the Perron-Frobenius operator is given by $$P=(p_{ij})\in \mathbb{R}^{k \times k}$$
+
+Then the Perron-Frobenius operator is given by 
+
+$$P=(p_{ij})\in \mathbb{R}^{k \times k}$$
+
 $$ p_{ij} = \frac{\mu(T^{-1}(\mathbb{B}_j)\cap \mathbb{B}_i)}{\mu(\mathbb{B}_i)}$$
 
 For example
@@ -139,7 +143,7 @@ $$p_{ij}\approx \frac{1}{L} \sum^L_{l=1}\mathbb{I}_{\mathbb{B}_j}(T(x_i^l))$$
 Then since $$\mu(T^{-1}(\mathbb{B}_j)\cap \mathbb{B}_i)= \int \mathbb{I}_{\mathbb{B}_j}\cdot P \mathbb{I}_{\mathbb{B}_i} d\mu$$ is evaluated by the previous integral, this evaluation of each $$p_{ij}$$ is a Monte-Carlo approximation. 
 
 Then finally for the matrix $$P=(p_{ij})$$, we may evaluate the invariant distribution $$P\rho = \rho$$ as the eigenvector giving the discrete distribution, for eigenvalue $$\lambda=1$$.
-}
+
 
 ## The Shobu-Ose-Mori Map
 
