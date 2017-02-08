@@ -19,7 +19,7 @@ The Budapest Semesters pairs students with fantastic Hungarian mathematicians fr
 Sight seeing in Budapest is amazing. Here is a view of the Liberty Bridge and above to the right Gellért Hill and the Citadella.
 ![](images/BSM/libertybridge.JPG)
 The walk up to the Citadella itself is quite beautiful. 
-![](images/BSM/citdellapath.JPG)
+![](images/BSM/citadellapath.JPG)
 The view from the hill top is remarkable as well. 
 ![](images/BSM/citadella.JPG)
 North of the Citadella is Fisherman's Bastion. Within the bastion is the beautiful Mátyás Church and equally beatiful view of the city down the hill to the east.
