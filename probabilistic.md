@@ -6,12 +6,12 @@ tags: ['erdos', 'probabilistic method', 'math']
 author: "Cole Campton"
 type: "projects"
 ---
-The Probabilistic Method is a method of proof first used by Paul Erdős. Erdős himself said during his 80th birthday conference, that he believes ths method will live long after him. The method has the striking ability to build proofs of existance without actual construction. 
+The Probabilistic Method is a method of proof first used by Paul Erdős. Erdős himself said during his 80th birthday conference, that he believes this method will live long after him. The method has the striking ability to build proofs of existence without actual construction. 
 
 Each application of the methods follows the same general workflow
 
 1. Describe the probability that an element of a set has a certain property.
-1. Use the property to show that this probabilty occurs with a non-zero probabilty.
+1. Use the property to show that this probability occurs with a non-zero provability.
 1. Then observe that an element with the chosen property must exist.
 
 In the abstract this seems to be an obvious technique. The following provides an example to allow the reader to appreciate the magic-like power of Erdős' Probabilistic Method.

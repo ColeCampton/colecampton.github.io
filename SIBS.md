@@ -7,7 +7,7 @@ author: "Cole Campton"
 type: "projects"
 ---
 # Summer Institute in Biostatistics
-In 2015 I particpated in [Emory University's Summer Institute in Biostatistics](https://sph.emory.edu/departments/bios/sibs/index.html) funded by [The National Heart, Lung and Blood Institute](https://www.nhlbi.nih.gov/research/training/summer-institute-biostatistics-t15). 
+In 2015 I participated in [Emory University's Summer Institute in Biostatistics](https://sph.emory.edu/departments/bios/sibs/index.html) funded by [The National Heart, Lung and Blood Institute](https://www.nhlbi.nih.gov/research/training/summer-institute-biostatistics-t15). 
 
 As part of this program we investigate the risk factors associated with Chronic Kidney Disease. 
 # Introduction
@@ -33,12 +33,12 @@ Certain biomarkers may be useful in predicting kidney decline and screening for 
 This study sought to investigate:
 
 1. The relationship between kidney function and suPAR, 
-1. The relationship between suPAR and GFR atthe time of patient enrollment, and 
-1. If suPAR levels could predict the decline of kidneyfunction at one year or the risk or progression of CKD stage.
+1. The relationship between suPAR and GFR at the time of patient enrollment, and 
+1. If suPAR levels could predict the decline of kidney function at one year or the risk or progression of CKD stage.
  
 In the investigation of these questions, we also looked at other biological factors that may influence the studied relationships. These factors included diabetes, Creactive protein, and GFR at the time of enrollment. Diabetes is a major known risk factor for kidney disease. Creactive protein (CPR) is an activator of the innate immune system during infection, but because of its implication in inflammatory diseases, we included it as a potential factor in our study. 
 # Methods
-We conducted a prospective observational study with data from the Emory Cardiovascular Biobank, which was established to investigate vascular and cardiovascular diseases. Patients were recruited from the hospital cath lab; data from a total of 366 patients was used. Data came from questionnaires filled out by patients in the waiting room, as well as from chart review. Patients also participated in a followup appointment approximately one year (between 300 and 430 days) after their enrollment in the study. Variables measured for each patient included:
+We conducted a prospective observational study with data from the Emory Cardiovascular Biobank, which was established to investigate vascular and cardiovascular diseases. Patients were recruited from the hospital catheterization lab; data from a total of 366 patients was used. Data came from questionnaires filled out by patients in the waiting room, as well as from chart review. Patients also participated in a followup appointment approximately one year (between 300 and 430 days) after their enrollment in the study. Variables measured for each patient included:
 
 - Enrollment date and followup date
 - Concentrations of suPAR, CPR, and creatinine
@@ -50,7 +50,7 @@ We conducted a prospective observational study with data from the Emory Cardiova
 - History of smoking
 - Use of ACE inhibitors or angiotensin II receptor blockers.
 
-Because of the nonnormal distribution of suPAR levels, a log transformation was performed, which normalized the variable. Multiple linear regression models were created, using stepwise selection, to first find the relationship between suPAR and GFR baseline, and then the relationship between suPAR and the difference of GFR at followup versus enrollment. Next, a multiple logistic regression model was created to determine whether suPAR can be used to predict CKD progression. CKD stages were correlated to each patient based on their GFR levels, both at baseline and at followup.
+Because of the non-normal distribution of suPAR levels, a log transformation was performed, which normalized the variable. Multiple linear regression models were created, using stepwise selection, to first find the relationship between suPAR and GFR baseline, and then the relationship between suPAR and the difference of GFR at followup versus enrollment. Next, a multiple logistic regression model was created to determine whether suPAR can be used to predict CKD progression. CKD stages were correlated to each patient based on their GFR levels, both at baseline and at followup.
 
 ![](images/SIBS/supar.png)
 ![](images/SIBS/logsupar.png)
@@ -77,13 +77,13 @@ There is a weakly negative, but statistically significant, relationship between 
 
 Of note, although there was no evidence of confounding variables, there was a significant interaction between the log transformed suPAR and patient’s clinical CKD status at baseline. Taking into account a significant interaction between baseline clinical and logsuPAR introduces a multicollinearity problem without greatly improving the fit of the new model ($$R^2$$ of new model =0.70). The model of the equation above is the most parsimonious model and holistically best represents the relationship. No interactions were found between logsuPAR and CRP or diabetes.
 
-## Baseline suPAR As Predicter for Decline of Kidney Function at 1 Year
+## Baseline suPAR As Predictor for Decline of Kidney Function at 1 Year
 
 A simple linear regression found that logsuPAR levels at baseline were not able to predict decline of kidney function, as measured by the difference in GFR values at 1 year compared to baseline (p=.20). A multiple linear regression model still found logsuPAR to be a statistically insignificant predictor (p=.18). No significant confounders or interactions were found in this model. The lack of significance indicates that we have insufficient evidence to suggest that suPAR levels can act as a predictor for a decline in kidney function at 1 year.
 
 ![](images/SIBS/deltagfr.png)
 
-## Baseline suPAR as Predicter for of CKD Stage Progression Risk
+## Baseline suPAR as Predictor for of CKD Stage Progression Risk
 
 According to the logistic regression that was run, there was significant prediction power of suPAR measured at baseline in relation to the risk of CKD stage progression, where stage progression was defined as advancing to a higher classification of GFR level. Holding whether or not GFR was clinical at baseline constant, we are 95% confident that the odds of a certain logsuPAR value experiencing a CKD stage progression was between 1.38 and 5.12 times the odds of a logsuPAR value one unit lower than the original (p=0.0036). No significant confounders or interactions were found in the model.
 

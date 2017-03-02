@@ -43,7 +43,7 @@ The finished MCaLs being tested.
 
 ![](images/Elektra/10.jpg)
 
-This room is equipped with an Elektra Semiautomatica and Elektra Nino so that the works are happy and 'efficient'. 
+This room is equipped with an Elektra Semiautomatica and Elektra Nino so that the workers are happy and 'efficient'. 
 
 ![](images/Elektra/11.jpg)
 ![](images/Elektra/12.jpg)

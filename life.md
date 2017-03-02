@@ -7,12 +7,12 @@ author: "Cole Campton"
 type: "projects"
 ---
 ![](images/ColeCampton.gif)
-Conway's Game of Life is a construction which distplays emergent behavior and has been studied as a point of interest in artificial intelligence. The game evolves based on an initial set up of the board but involves no players. The following are rules for the evolution of the board at discrete time steps. 
+Conway's Game of Life is a construction which displays emergent behavior and has been studied as a point of interest in artificial intelligence. The game evolves based on an initial set up of the board but involves no players. The following are rules for the evolution of the board at discrete time steps. 
 
-1. Any live cell with fewer than two live neighbours dies, as if caused by underpopulation.
-1. Any live cell with two or three live neighbours lives on to the next generation.
-1. Any live cell with more than three live neighbours dies, as if by overpopulation.
-1. Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
+1. Any live cell with fewer than two live neighbors dies, as if caused by underpopulation.
+1. Any live cell with two or three live neighbors lives on to the next generation.
+1. Any live cell with more than three live neighbors dies, as if by overpopulation.
+1. Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction.
 
 
 The purpose of this project was to investigate the intricate structure needed to create scrolling text in John Conway's Game of Life. In doing so I investigated several Game of Life structures and animated their full periods, coloring the transitions between stages. Below, red squares are squares that were alive in a previous stage and remain into the next (have two or three neighbors), yellow squares are squares that are no longer alive in the coming stage (do not have two or three neighbors), and green squares are grey dead squares that will come alive in the next stage (have exactly three living neighbors).
@@ -59,7 +59,7 @@ The Light Weight Spaceship is an automata which proceeds stably in a coordinate 
 
 ![](images/Lwss.gif)
 
-The conversion of the glider into a Lightweight Spaceship creates each pixel that travels to the let across the screen.This occurs by another collision with a similar oscillating form.
+The conversion of the glider into a Lightweight Spaceship creates each pixel that travels to the left across the screen. This occurs by another collision with a similar oscillating form.
 
 ![](images/GliderToLWSS.png)
 
