@@ -9,7 +9,7 @@ type: "projects"
 
 ## Introduction
 
-In the investigation of chaotic systems it is clear that hopes of predicting long term behavior is is futile. However, from the investigation of chaotic systems Ergodic Theory has arisen in order to predict the average long term behavior of dynamic systems. It is our intent to investigate the theoretical results of a main result of Ergodic Theory, namely that of Birkhoff's Ergodic Theorem.
+In the investigation of chaotic systems it is clear that hopes of predicting long term behavior is futile. However, from the investigation of chaotic systems Ergodic Theory has arisen in order to predict the average long term behavior of dynamic systems. It is our intent to investigate the theoretical results of a main result of Ergodic Theory, namely that of Birkhoff's Ergodic Theorem.
 
 #### Definition
 
