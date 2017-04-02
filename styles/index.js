@@ -15,7 +15,11 @@ var show_projects = function() {
     $('#about').fadeOut(300, function() {
         $('#projects').fadeIn(300)
     });
+    $('#post-body').fadeOut(300, function() {
+        $('#projects').fadeIn(300)
+    });
     $('#projects-btn').addClass('disabled')
+    
 };
 var show_about = function() {
     $('#posts-btn').removeClass('disabled');
@@ -24,6 +28,9 @@ var show_about = function() {
         $('#about').fadeIn(300)
     });
     $('#projects').fadeOut(300, function() {
+        $('#about').fadeIn(300)
+    });
+    $('#post-body').fadeOut(300, function() {
         $('#about').fadeIn(300)
     });
     $('#about-btn').addClass('disabled')
@@ -35,6 +42,9 @@ var show_posts = function() {
         $('#posts').fadeIn(300)
     });
     $('#about').fadeOut(function() {
+        $('#posts').fadeIn(300)
+    });
+    $('#post-body').fadeOut(300, function() {
         $('#posts').fadeIn(300)
     });
     $('#posts-btn').addClass('disabled')
