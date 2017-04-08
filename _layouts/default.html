@@ -53,14 +53,7 @@
               </div>
 
               <div id="about">
-                  <h2 class="my-mini-heading">{{ site.about_btn }}</h2>
-                  <article class="left-align">
-                    <div class="my-text-body">
-                    {% include about.html %}
-                  </div>
-                  </article>
-                </ul>
-                      
+                {% include_relative /_site/about.html %}
                 <div>
                   <a onclick="hide_lists();" class="waves-effect waves-teal btn-flat btn-large">{{ site.close_btn }}</a>
                 </div>
@@ -94,17 +87,12 @@
                     </li>
                     {% endfor %}
                   </ul>
+                  
                 </div>
                 <div id="about-noscript">
-                  <!-- <h2 class="my-mini-heading">{{ site.about_btn }}</h2> -->
-                <ul>
-                <h2 class="my-mini-heading">About</h2>
-                <article class="left-align">
-                  <div class="my-text-body">
-                      {% include about.html %}
-                    </div>
-                </article>
+                    {% include_relative /_site/about.html %}
                 </div>
+                
               </noscript>
             
             {{ content }}
