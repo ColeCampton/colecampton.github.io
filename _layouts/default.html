@@ -55,17 +55,12 @@
               <div id="about">
                   <h2 class="my-mini-heading">{{ site.about_btn }}</h2>
                   <article class="left-align">
-                    <!-- <h2 class="my-mini-heading">About</h2> -->
                     <div class="my-text-body">
-                      <p>Hello my name is Cole Campton. I was born and raised in Mill Valley, California. I am a mathematics student at Reed College in Portland, Oregon.</p>
-
-                  <p>I am interested in computational mathematics, rock climbing, coffee and lever espresso machines.</p>
-
-                  <p>Feel free to contact me.  Let’s talk math and coffee.</p>
-                                  
+                    {% include about.html %}
                   </div>
                   </article>
                 </ul>
+                      
                 <div>
                   <a onclick="hide_lists();" class="waves-effect waves-teal btn-flat btn-large">{{ site.close_btn }}</a>
                 </div>
@@ -102,18 +97,12 @@
                 </div>
                 <div id="about-noscript">
                   <!-- <h2 class="my-mini-heading">{{ site.about_btn }}</h2> -->
-                  <ul>
+                <ul>
                 <h2 class="my-mini-heading">About</h2>
                 <article class="left-align">
-                  <!-- <h2 class="my-mini-heading">About</h2> -->
                   <div class="my-text-body">
-                    <p>Hello my name is Cole Campton. I was born and raised in Mill Valley, California. I am a mathematics student at Reed College in Portland, Oregon.</p>
-
-                <p>I am interested in computational mathematics, rock climbing, coffee and lever espresso machines.</p>
-
-                <p>Feel free to contact me.  Let’s talk math and coffee.</p>
-
-                </div>
+                      {% include about.html %}
+                    </div>
                 </article>
                 </div>
               </noscript>
