@@ -1,10 +1,9 @@
 ---
-layout: page
+layout: interest
 title:  "Climbing"
 date:   2016-09-19 22:10:00 +0200
 tags: ['climbing', 'reed', 'bouldering']
 author: "Cole Campton"
-type: "interests"
 ---
 
 The community that comes with climbing is one of the best parts of the sport. The Reed College Mountaineering Club helped me to feel comfortable and taught me to love the sport.

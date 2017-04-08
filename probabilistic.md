@@ -1,10 +1,9 @@
 ---
-layout: page
+layout: project
 title:  "The Probabilistic Method"
 date:   2016-09-19 22:10:00 +0200
 tags: ['erdos', 'probabilistic method', 'math']
 author: "Cole Campton"
-type: "projects"
 ---
 The Probabilistic Method is a method of proof first used by Paul Erdős. Erdős himself said during his 80th birthday conference, that he believes this method will live long after him. The method has the striking ability to build proofs of existence without actual construction. 
 

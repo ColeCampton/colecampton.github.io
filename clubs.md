@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: interest
 title:  "Use my jekyll theme"
 date:   2016-09-19 22:10:00 +0200
 tags: ['english', 'jekyll', 'theme']

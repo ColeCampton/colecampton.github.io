@@ -24,10 +24,12 @@ disqus_shortname:
 # language settings
 isolang: en
 close_btn: "Close"
-home_btn: "See More"
-projects_btn: "Interests"
+home_btn: "Home"
+home_projects_btn: "See More"
+home_interests_btn: "See More"
+interests_btn: "Interests"
 about_btn: "About"
-posts_btn: "Projects"
+projects_btn: "Projects"
 imprint_btn: "Imprint"
 name_badge: ""
 #rss_badge: "Subscribe feed!"

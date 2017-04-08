@@ -1,10 +1,9 @@
 ---
-layout: page
+layout: project
 title:  "Conway's Game of Life"
 date:   2016-09-19 22:10:00 +0200
 tags: ['conway', 'game of life']
 author: "Cole Campton"
-type: "projects"
 ---
 ![](images/ColeCampton.gif)
 Conway's Game of Life is a construction which displays emergent behavior and has been studied as a point of interest in artificial intelligence. The game evolves based on an initial set up of the board but involves no players. The following are rules for the evolution of the board at discrete time steps. 

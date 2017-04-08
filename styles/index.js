@@ -1,15 +1,15 @@
 var hide_lists = function(cb) {
-    $('#posts').fadeOut(300);
+    $('#interests').fadeOut(300);
     $('#projects').fadeOut(300);
     $('#about').fadeOut(300);
-    $('#posts-btn').removeClass('disabled');
+    $('#interests-btn').removeClass('disabled');
     $('#projects-btn').removeClass('disabled')
     $('#about-btn').removeClass('disabled')
 };
 var show_projects = function() {
-    $('#posts-btn').removeClass('disabled');
+    $('#interests-btn').removeClass('disabled');
     $('#about-btn').removeClass('disabled');
-    $('#posts').fadeOut(300, function() {
+    $('#interests').fadeOut(300, function() {
         $('#projects').fadeIn(300)
     });
     $('#about').fadeOut(300, function() {
@@ -22,9 +22,9 @@ var show_projects = function() {
     
 };
 var show_about = function() {
-    $('#posts-btn').removeClass('disabled');
+    $('#interests-btn').removeClass('disabled');
     $('#projects-btn').removeClass('disabled');
-    $('#posts').fadeOut(300, function() {
+    $('#interests').fadeOut(300, function() {
         $('#about').fadeIn(300)
     });
     $('#projects').fadeOut(300, function() {
@@ -35,17 +35,17 @@ var show_about = function() {
     });
     $('#about-btn').addClass('disabled')
 };
-var show_posts = function() {
+var show_interests = function() {
     $('#projects-btn').removeClass('disabled');
     $('#about-btn').removeClass('disabled');
     $('#projects').fadeOut(function() {
-        $('#posts').fadeIn(300)
+        $('#interests').fadeIn(300)
     });
     $('#about').fadeOut(function() {
-        $('#posts').fadeIn(300)
+        $('#interests').fadeIn(300)
     });
     $('#post-body').fadeOut(300, function() {
-        $('#posts').fadeIn(300)
+        $('#interests').fadeIn(300)
     });
-    $('#posts-btn').addClass('disabled')
+    $('#interests-btn').addClass('disabled')
 };

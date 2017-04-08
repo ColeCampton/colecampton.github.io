@@ -1,10 +1,9 @@
 ---
-layout: page
+layout: project
 title:  "Chronic Kidney Disease"
 date:   2016-09-19 00:00:00 +0200
 tags: ['SIBS', 'CKD']
 author: "Cole Campton"
-type: "projects"
 ---
 # Summer Institute in Biostatistics
 In 2015 I participated in [Emory University's Summer Institute in Biostatistics](https://sph.emory.edu/departments/bios/sibs/index.html) funded by [The National Heart, Lung and Blood Institute](https://www.nhlbi.nih.gov/research/training/summer-institute-biostatistics-t15). 

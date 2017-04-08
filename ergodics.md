@@ -1,10 +1,9 @@
 ---
-layout: page
+layout: project
 title:  "The Perron-Frobenius Operator"
 date:   2016-09-19 22:10:00 +0200
 tags: ['ergodic', 'birhoff', 'dynamic systems']
 author: "Cole Campton"
-type: "projects"
 ---
 
 ## Introduction

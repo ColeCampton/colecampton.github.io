@@ -1,10 +1,9 @@
 ---
-layout: page
+layout: interest
 title:  "Coffee"
 date:   2016-09-19 22:10:00 +0200
 tags: ['coffee', 'espresso']
 author: "Cole Campton"
-type: "interests"
 ---
 
 ![](images/elektra.JPG)
