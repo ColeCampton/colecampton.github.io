@@ -43,7 +43,7 @@ Such that
 
 $$P = d(A)\otimes I_n -2\cdot d(A)\otimes d(B) + I_n\otimes d(B)$$
 
-The resulint augmented Lagrangian is given as 
+The resuling augmented Lagrangian is given as 
 
 $$
 \begin{align*}
