@@ -47,16 +47,16 @@ Now we display the input image along with its deblurred and denoised pair.
 
 ## Denoise Lena direct method with $\lambda = .06$
 
-![](diagrams/lena_5x5Ga15_BSNR15dB_RMSE107794.png)![](diagrams/lena.png)
+![](images/lena_5x5Ga15_BSNR15dB_RMSE107794.png)![](diagrams/lena.png)
 
 ## Denoise Cameraman 25dB with direct method $\lambda = .025$
 
-![](diagrams/cameraman_19x19ave_BSNR25dB_RMSE298183.png) ![](diagrams/camerman25.png)
+![](images/cameraman_19x19ave_BSNR25dB_RMSE298183.png) ![](diagrams/camerman25.png)
 
 ## Denoise Cameraman 40dB with direct method $\lambda = .025$
 
-![](diagrams/cameraman_19x19_BSNR40dB_RMSE296733.png) ![](diagrams/camerman40.png)
+![](images/cameraman_19x19_BSNR40dB_RMSE296733.png) ![](diagrams/camerman40.png)
 
 ## Denoise Chemical Plant with $\lambda = .1$
 
-![](diagrams/ChemicalPlant256_11x11Ga175_BSNR30_RMSE150852.png) ![](diagrams/chemplant.png)
+![](images/ChemicalPlant256_11x11Ga175_BSNR30_RMSE150852.png) ![](diagrams/chemplant.png)
