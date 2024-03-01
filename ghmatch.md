@@ -22,13 +22,13 @@ Then the relaxation is given by the quadratic program with linear constrants
 $$
 \begin{align*}
     arg\,min_{\Delta} \quad & \text{vec}(\Delta)^T P \text{vec}(\Delta) - \text{vec}(W)^T\text{vec}(\Delta)\\
-    \text{subject to }& C\text{vec}(\Delta) = \unicode{x1D7D9}\\
+    \text{subject to }& C\text{vec}(\Delta) = \mathbb{1}\\
     & \Pi^T\Pi \text{vec}(\Delta)  = \text{vec}(\Delta)\\
     &  0\le \text{vec}(\Delta)\le 1
 \end{align*}
 $$
 
-Where $$C \triangleq \begin{bmatrix}I_{n}\otimes \unicode{x1D7D9}_{n}^T \\ \unicode{x1D7D9}_{n}^T\otimes I_{n}\end{bmatrix}$$ is the $$2n\times n^2$$ unsigned incidence matrix which enforces the matrix relaxation of the permutation to be doubly stochastic for right-hand-side $\unicode{x1D7D9}$, the column vector of all ones. 
+Where $$C \triangleq \begin{bmatrix}I_{n}\otimes \mathbb{1}_{n}^T \\ \mathbb{1}_{n}^T\otimes I_{n}\end{bmatrix}$$ is the $$2n\times n^2$$ unsigned incidence matrix which enforces the matrix relaxation of the permutation to be doubly stochastic for right-hand-side $\mathbb{1}$, the column vector of all ones. 
 
 The matrix $$P$$ is derived from a set of identities for the Frobenius norm $$\|\cdot\|_F$$, Kronecker product $$\otimes$$ and vectorization operator $$\text{vec}$$, which stretches a $$n\times m$$ matrix column-wise into a vector.
 $$
@@ -52,7 +52,7 @@ $$
 
 where
 
-$$N \triangleq \begin{bmatrix}0 \\ - I\end{bmatrix}, \quad M \triangleq \begin{bmatrix}C \\ I \end{bmatrix},\quad b\triangleq \begin{bmatrix} \unicode{x1D7D9}\\0\end{bmatrix}$$
+$$N \triangleq \begin{bmatrix}0 \\ - I\end{bmatrix}, \quad M \triangleq \begin{bmatrix}C \\ I \end{bmatrix},\quad b\triangleq \begin{bmatrix} \mathbb{1}\\0\end{bmatrix}$$
 
 which is optimized with the following updates using the Alternative Direction Method of Mulitpliers (ADMM)
 
@@ -69,11 +69,11 @@ The primal variable $$y$$-update step requires the solution the the following li
 
 $$\begin{bmatrix} P+\rho I & C^T \\ C & -(1/\rho) I\end{bmatrix} \begin{bmatrix} y^{(k+1)} \\ v \end{bmatrix} = \begin{bmatrix} b^{(k+1)} \\ 0 \end{bmatrix} $$
 
-where $$b^{(k+1)}= w +\rho\left(x^{(k)} + C^T \unicode{x1D7D9} - \begin{bmatrix} C^T & I \end{bmatrix} \lambda^{k}\right)$$. This may be carried out efficiently via a block $$LDL^T$$ factorization. Since each of $$d(A), \,d(B)$$ are symmetric we may obtain the $$Q\Lambda Q^T$$ decomposition of $$P$$ dependent blocks efficiently as the product of Kroneckeck products and sums of diagonal matrices,
+where $$b^{(k+1)}= w +\rho\left(x^{(k)} + C^T \mathbb{1} - \begin{bmatrix} C^T & I \end{bmatrix} \lambda^{k}\right)$$. This may be carried out efficiently via a block $$LDL^T$$ factorization. Since each of $$d(A), \,d(B)$$ are symmetric we may obtain the $$Q\Lambda Q^T$$ decomposition of $$P$$ dependent blocks efficiently as the product of Kroneckeck products and sums of diagonal matrices,
 
 $$P + \rho I = \left(Q_A\otimes Q_B\right)D_P\left(Q_A\otimes Q_B\right)^T $$
 
 Here $$D_P = \Lambda_A^2\otimes I_n-2\Lambda_A\otimes \Lambda_B + I_n\otimes \Lambda_B^2 + \rho I$$.
 
-The magic here is that minimizing this objective relating to this $$n^2\times n^2$$ matrix may be achieved by factoring $n\times n$ matrices $$d(A),\, d(B)$$ instead. An added charm is that the addition of the regularization term $$\text{vec}(W)^T\text{vec}(\Delta)$$ only results in a raising of the matrix $$P$$ which passes through the factorization thanks to the diagonalizability of the symmetric, real matrices $$d(A),\, d(B)$$.
+The magic here is that minimizing this objective relating to this $$n^2\times n^2$$ matrix may be achieved by factoring $$n\times n$$ matrices $$d(A),\, d(B)$$ instead. An added charm is that the addition of the regularization term $$\text{vec}(W)^T\text{vec}(\Delta)$$ only results in a raising of the matrix $$P$$ which passes through the factorization thanks to the diagonalizability of the symmetric, real matrices $$d(A),\, d(B)$$.
 
