@@ -1,4 +1,7 @@
-
+- name: Iterative Graph Alignment 
+  link: "/ghmatch.html"
+  description: "Discussion of an interesting factorization and iterative algorithm for (relaxed) sub-graph isomorphism."
+  
 - name: Image Deconvolution
   link: "/denoising.html"
   description: "Discussion of the math behind denoising by directly inverting a regularized convolution objective."
