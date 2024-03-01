@@ -2,7 +2,7 @@
 layout: project
 title:  "Relaxed Weighted Sub-Graph Isomorphism with Clever Factorization"
 date:   2024-03-01 9:10:00 +0200
-tags: ['gromov-hausdoff','graph isomorphism', 'iterative methods', 'admm]
+tags: ['gromov-hausdoff','graph isomorphism', 'iterative methods', 'admm']
 author: "Cole Campton"
 ---
 
@@ -31,6 +31,7 @@ $$
 Where $$C \triangleq \begin{bmatrix}I_{n}\otimes \mathbb{1}_{n}^T \\ \mathbb{1}_{n}^T\otimes I_{n}\end{bmatrix}$$ is the $$2n\times n^2$$ unsigned incidence matrix which enforces the matrix relaxation of the permutation to be doubly stochastic for right-hand-side $\mathbb{1}$, the column vector of all ones. 
 
 The matrix $$P$$ is derived from a set of identities for the Frobenius norm $$\|\cdot\|_F$$, Kronecker product $$\otimes$$ and vectorization operator $$\text{vec}$$, which stretches a $$n\times m$$ matrix column-wise into a vector.
+
 $$
 \begin{align*}
 \|\cdot\|_F^2 &= \|vecM(\cdot)\|_2^2 = \text{vec}(\cdot)^T\text{vec}(\cdot)\\
@@ -43,6 +44,7 @@ Such that
 $$P = d(A)\otimes I_n -2\cdot d(A)\otimes d(B) + I_n\otimes d(B)$$
 
 The resulint augmented Lagrangian is given as 
+
 $$
 \begin{align*}
 L_\rho(x,y,\lambda) &= y^T P y - w^Ty +\lambda^T\left(Nx + My -b\right)\\
