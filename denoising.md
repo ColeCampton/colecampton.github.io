@@ -22,7 +22,7 @@ Now for the sake of putting together concepts personally I have chosen to solve 
 
 $$f\ast_c k = \textit{circulant}(k^T) f$$
 
-Where $\textit{circulant}(k^T)$ is a special Toeplitz matrix, known as a 'circulant' matrix. Then the non-circular convolution is given by padding $k$ sufficiently. Let $f\in \RR^{n\times p}$ and $\textit{length}(k)=m$, we define the following functions
+Where $\textit{circulant}(k^T)$ is a special Toeplitz matrix, known as a 'circulant' matrix. Then the non-circular convolution is given by padding $k$ sufficiently. Let $f\in \mathbb{R}^{n\times p}$ and $\textit{length}(k)=m$, we define the following functions
 $$\textit{circulantPad}(k^T) = \textit{circulant}([k,0_{1 \times (\max(n,p)+\lfloor m/2 \rfloor + 1)}])$$
 and pad $f$ first by $\textit{padSquare}(f)$ which appends rows or columns of trailing $0$s such that $f$ is square, then
 
