@@ -213,10 +213,9 @@ $(document).ready(function () {
         var data = $(this).serialize();
 
         $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
-
-        if (MD5($('#invite_code').val()) !== 'e3e0fabae22eed4234709a0140efdf94'
-            && MD5($('#invite_code').val()) !== 'ed6658e6f22583ed66fb5e5e735b9e63') {
-            $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
+		// if attendance is still listed as undecided, ask to fill out
+        if (MD5($('#invite_code').val()) == 'ef203c53904d46dbafaa94497dd5a0e2') {
+            $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Please fill out your attendance.'));
         } else {
             $.post('https://script.google.com/macros/s/AKfycbzZ_YndhrIowX_4Ezp9D8V9JNNAcJwd7HimKiwbNIXDdbBchrAP6fzdDOBXYSrAO_Mb/exec', data)
                 .done(function (data) {
@@ -234,7 +233,19 @@ $(document).ready(function () {
                 });
         }
     });
+    $('#login-form').on('submit', function (e) {
+        e.preventDefault();
+        var data = $(this).serialize();
 
+        $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
+
+        if (MD5($('#invite_code').val()) !== 'ed6658e6f22583ed66fb5e5e735b9e63'
+            && MD5($('#invite_code').val()) !== '9dd5d0d80c6edf7f55faaa698ceff84a') {
+            $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
+        } else {
+           window.location.replace('./index.html');
+        }
+    });
 });
 
 /********************** Extras **********************/
