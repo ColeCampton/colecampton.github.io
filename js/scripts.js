@@ -217,7 +217,7 @@ $(document).ready(function () {
         if (MD5($('#invite_code').val()) == 'ef203c53904d46dbafaa94497dd5a0e2') {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Please fill out your attendance.'));
         } else {
-            $.post('https://script.google.com/macros/s/AKfycbzZ_YndhrIowX_4Ezp9D8V9JNNAcJwd7HimKiwbNIXDdbBchrAP6fzdDOBXYSrAO_Mb/exec', data)
+            $.post('https://script.google.com/macros/s/AKfycbxFrVikcYtUKkm32-1Qus4lg_NB_d_IywVbq22kHQC49hIjQjajMKhOxOxirSf9cZ5V/exec', data)
                 .done(function (data) {
                     console.log(data);
                     if (data.result === "error") {
