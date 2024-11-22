@@ -243,7 +243,7 @@ $(document).ready(function () {
             && MD5($('#invite_code').val()) !== '9dd5d0d80c6edf7f55faaa698ceff84a') {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
         } else {
-           window.location.replace('./index.html');
+           window.location.replace('./243f8db39b0163dbc8c841f97a0c3285.html');
         }
     });
 });
