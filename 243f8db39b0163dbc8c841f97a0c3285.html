@@ -336,7 +336,19 @@
         <h3>How do I get there?</h3>
         <p>Fly into SFO, drive to Carmel Valley. Ride share will be available to the venue from Carmel Valley.</p>
     </div>
-    <div id="map-canvas"></div>
+	<div id="map-canvas">
+		<iframe
+		  width="100%"
+		  height="100%"
+		  style="border:0"
+		  loading="lazy"
+		  allowfullscreen
+		  referrerpolicy="no-referrer-when-downgrade"
+		  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBmgz7THzyUeFuWl4y522D6GxuVI44S9Bo
+		    &q=Los+Laureles+Lodge,Carmel+Valley+California&zoom=12">
+		</iframe>
+	</div>
+	
     <div id="map-content-wrapper" class="container pointer-events-none">
         <div class="row">
             <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
@@ -491,6 +503,8 @@
 <script src="js/scripts.min.js"></script>
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmgz7THzyUeFuWl4y522D6GxuVI44S9Bo&callback=initMap"></script>
+		
+
 <!-- Google Analytics -->
 <script>
     (function (i, s, o, g, r, a, m) {
