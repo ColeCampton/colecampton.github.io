@@ -187,14 +187,14 @@ $(document).ready(function () {
             title: "Cole and Kendall's Wedding",
 
             // Event start date
-            start: new Date('Oct 25, 2024 10:00'),
+            start: new Date('Oct 25, 2025 10:00'),
 
             // Event duration (IN MINUTES)
             // duration: 120,
 
             // You can also choose to set an end time
             // If an end time is set, this will take precedence over duration
-            end: new Date('Oct 25, 2024 21:00'),
+            end: new Date('Oct 25, 2025 21:00'),
 
             // Event Address
             address: 'Los Laureles Lodge, Carmel Valley, CA ',
