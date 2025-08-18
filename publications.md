@@ -2,6 +2,7 @@
 layout: default
 title: "Publications"
 ---
+<div style="text-align: left;">
 
 1. Cole Campton and Xiaobai Sun. *Auxiliary maximum likelihood estimation for noisy point cloud registration.* In **2019 IEEE High Performance Extreme Computing Conference (HPEC)**, pp. 1–7, Sep. 2019.  
 
@@ -14,3 +15,5 @@ title: "Publications"
 5. Cole Campton, David Z. Pan, Mario Cortese, Jeffrey Wallin, Xiaobai Sun, Chi-Yi Chen, Chen-Hao Tseng, Scott Balsitis, Yao-Chun Hsu, and Bryan Downie. *Dynamic modeling of hepatitis B virus infected hepatocytes using peripheral viral markers and validation with liver biopsy long-read DNA sequencing.* In **Intelligent Systems for Molecular Biology (ISMB)**, 2024.  
 
 6. Cole Campton, David Z. Pan, Mario Cortese, Jeffrey Wallin, Xiaobai Sun, Chi-Yi Chen, Chen-Hao Tseng, Scott Balsitis, Yao-Chun Hsu, and Bryan Downie. *Dynamic modeling and validation of hepatitis B virus infected hepatocytes using peripheral biomarkers.* **PLOS Computational Biology**, (In Submission).  
+
+</div>
