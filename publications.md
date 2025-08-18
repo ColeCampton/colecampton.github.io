@@ -1,6 +1,6 @@
 ---
-layout: project
-title:  "Publications"
+layout: default
+title: "Publications"
 ---
 
 1. Cole Campton and Xiaobai Sun. *Auxiliary maximum likelihood estimation for noisy point cloud registration.* In **2019 IEEE High Performance Extreme Computing Conference (HPEC)**, pp. 1–7, Sep. 2019.  
